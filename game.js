@@ -33,10 +33,10 @@ function create() {
     this.sound = this.sound.add('sfx');
     this.add.sprite(W / 2, H / 2, 'background').setScale(0.25);
     this.title = this.add.sprite(W / 2 - 50, 50, 'title').setScale(0.10);
-    this.add.sprite(W / 2 + 130, H / 2 + 130, 'stand').setScale(0.20);
+    this.add.sprite(W / 2 + 180, H / 2 + 100, 'stand').setScale(0.20);
 
 
-    this.wheel = this.add.sprite(W / 2 + 130, H / 2 - 10, 'wheel');
+    this.wheel = this.add.sprite(W / 2 + 180, H / 2-40, 'wheel');
     this.wheel.setScale(0.13);
 
     this.button = this.add.sprite(160, H / 2 + 20, 'button');
@@ -45,7 +45,7 @@ function create() {
     this.button.setInteractive({ useHandCursor: true });
 
 
-    this.add.sprite(W / 2 + 128, H / 2 - 150, 'pin').setScale(0.16);
+    this.add.sprite(W / 2 + 178, H / 2 - 180, 'pin').setScale(0.16);
 
     this.button.on('pointerover', enterButtonHoverState, this);
     this.button.on('pointerout', enterButtonRestState, this);
